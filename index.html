@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator-header">
+            <h1><i class="fas fa-calculator"></i> Calculator</h1>
+            <p class="calculator-subtitle">Basic Calculator</p>
+        </div>
+        
+        <div class="calculator-display">
+            <div class="display-text" id="display">0</div>
+        </div>
+        
+        <!-- Buttons -->
+        <div class="calculator-buttons">
+            <!-- Row 1 -->
+            <button class="calc-btn function-btn" data-action="clear">C</button>
+            <button class="calc-btn function-btn" data-action="clear-entry">CE</button>
+            <button class="calc-btn function-btn" data-action="backspace">⌫</button>
+            <button class="calc-btn operator-btn" data-operator="/">/</button>
+            
+            <!-- Row 2 -->
+            <button class="calc-btn number-btn" data-number="7">7</button>
+            <button class="calc-btn number-btn" data-number="8">8</button>
+            <button class="calc-btn number-btn" data-number="9">9</button>
+            <button class="calc-btn operator-btn" data-operator="*">×</button>
+            
+            <!-- Row 3 -->
+            <button class="calc-btn number-btn" data-number="4">4</button>
+            <button class="calc-btn number-btn" data-number="5">5</button>
+            <button class="calc-btn number-btn" data-number="6">6</button>
+            <button class="calc-btn operator-btn" data-operator="-">-</button>
+            
+            <!-- Row 4 -->
+            <button class="calc-btn number-btn" data-number="1">1</button>
+            <button class="calc-btn number-btn" data-number="2">2</button>
+            <button class="calc-btn number-btn" data-number="3">3</button>
+            <button class="calc-btn operator-btn" data-operator="+">+</button>
+            
+            <!-- Row 5 -->
+            <button class="calc-btn number-btn zero-btn" data-number="0">0</button>
+            <button class="calc-btn number-btn" data-action="decimal">.</button>
+            <button class="calc-btn equals-btn" data-action="calculate">=</button>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
